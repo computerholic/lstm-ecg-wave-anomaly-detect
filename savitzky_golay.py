@@ -44,7 +44,7 @@ def savitzky_golay(y, window_size, order, deriv=0, rate=1):
        Data by Simplified Least Squares Procedures. Analytical
        Chemistry, 1964, 36 (8), pp 1627-1639.
     .. [2] Numerical Recipes 3rd Edition: The Art of Scientific Computing
-       W.H. Press, S.A. Teukolsky, W.T. Vetterling, B.P. Flannery
+       W.H. Press, S.A. Teukolsky, W.T. Vetterling, B.P. Fcllannery
        Cambridge University Press ISBN-13: 9780521880688
     """
     import numpy as np
@@ -53,7 +53,7 @@ def savitzky_golay(y, window_size, order, deriv=0, rate=1):
     try:
         window_size = np.abs(np.int(window_size))
         order = np.abs(np.int(order))
-    except ValueError, msg:
+    except ValueError:
         raise ValueError("window_size and order have to be of type int")
     if window_size % 2 != 1 or window_size < 1:
         raise TypeError("window_size size must be a positive odd number")
