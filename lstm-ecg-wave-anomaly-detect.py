@@ -185,7 +185,7 @@ plt.figure('2')
 print(confusion_matrix(y_test,predicted))
 
 
-print("/n")
+print("/n" + "*"*870)
 
 
 
